@@ -11,7 +11,7 @@ public class Tune
 	private String altTitle;
 	private String notation;
 
-	/*
+	
 	public Tune(int x, String title, String altTitle, String notation)
 	{
 		this.x = x;
@@ -19,7 +19,19 @@ public class Tune
 		this.altTitle = altTitle;
 		this.notation = notation;
 	}
-	*/
+
+	public String toString()
+    {
+        StringBuffer sb = new StringBuffer();
+        
+        for(String File : File)
+        {
+            sb.append(File + ", ");
+        }
+
+		return sb.toString();
+
+	}
 
 	public void loadFile()
 	{
@@ -34,6 +46,24 @@ public class Tune
 			while((l = inputStream.readLine()) != null)
 			{
 				File.add(l);
+			}
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			if(inputStream != null)
+			{
+				try
+				{
+					inputStream.close();
+				}
+				catch(Exception e)
+				{
+					e.printStackTrace;
+				}
 			}
 		}
 	}

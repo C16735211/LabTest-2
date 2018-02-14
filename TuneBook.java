@@ -22,19 +22,6 @@ public class TuneBook
 		public void play();
 	}
 
-	public String toString()
-    {
-        StringBuffer sb = new StringBuffer();
-        
-        for(String File : File)
-        {
-            sb.append(File + ", ");
-        }
-
-		return sb.toString();
-
-	}
-
 	public Tune findTune(String title)
 	{
 		return title[0];
@@ -45,7 +32,7 @@ public class TuneBook
         TuneBook tb = new TuneBook("hnj0.abc");
         System.out.println(tb);
 
-        Tune t = tb.findTune("Scotsman over the Border");
-        t.play();
+        Tune tb = tb.findTune("Scotsman over the Border");
+        tb.play();
     }
 }

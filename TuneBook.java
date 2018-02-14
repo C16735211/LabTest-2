@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class TuneBook
 {
-	ArrayList<String> tunes = new ArrayList<String>();
+	ArrayList<String> Tunes = new ArrayList<String>();
 
 	private int x;
 	private String title;

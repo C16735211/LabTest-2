@@ -23,13 +23,15 @@ public class Tune
 	public String toString()
     {
         StringBuffer sb = new StringBuffer();
-        
-        for(String File : File)
+      
+        for(String File:files)
         {
-            sb.append(File + ", ");
+        	list += item.toString() + "\n";
         }
 
-		return sb.toString();
+	    return "Name: " + name + " \nAge: " + age + "\n\n";
+
+	    }
 
 	}
 

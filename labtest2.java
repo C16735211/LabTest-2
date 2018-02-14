@@ -3,5 +3,6 @@ public class labtest2{
 	{
 		System.out.println("Hello Darren");
 		System.out.println("MO SALAH .... MO SALAH");
+		System.out.println("Running down the wing.........");
 	}
 }

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class TuneBook
 {
-	ArrayList<String> tunes = new ArrayList<String>();
+	ArrayList<String> Tune = new ArrayList<String>();
 
 	Scanner s = new Scanner(new File("File.abc"));
 	private String File;
@@ -29,7 +29,7 @@ public class TuneBook
 
 		while (s.hasNext()) 
 		{
-			tunes.add(s.next().title);
+			Tune.add(s.next().title);
 		}
 	}
 
@@ -39,9 +39,14 @@ public class TuneBook
 		public void play();
 	}
 
-	public Tune findTune(String title)
+	public String findTune(String title)
 	{
-		return title[0];
+		return title;
+	}
+
+	public void setTitle(String title)
+	{
+		this.title = title;
 	}
 
 	public static void main(String[] args)

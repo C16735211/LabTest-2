@@ -20,16 +20,21 @@ public class Tune
 		this.notation = notation;
 	}
 
+	public loadFile(String title)
+	{
+		this.title = title;
+	}
+
 	public String toString()
     {
         StringBuffer sb = new StringBuffer();
       
-        for(String File:files)
+        for(String Tune:tunes)
         {
-        	list += item.toString() + "\n";
+        	sb.append(File + ",");
         }
 
-	    return "Name: " + name + " \nAge: " + age + "\n\n";
+	    return "Num " + x + " \nTitle: " + title + "Alt Title: " + altTitle "\n\n";
 
 	    }
 

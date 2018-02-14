@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class TuneBook
 {
-	ArrayList<String> Tunes = new ArrayList<String>();
+	ArrayList<String> tunes = new ArrayList<String>();
 
 	private int x;
 	private String title;
@@ -29,7 +29,7 @@ public class TuneBook
 
 	public static void main(String[] args)
     {
-        TuneBook tb = new TuneBook("hnj0.abc");
+        TuneBook tb = new TuneBook("File.abc");
         System.out.println(tb);
 
         Tune tb = tb.findTune("Scotsman over the Border");

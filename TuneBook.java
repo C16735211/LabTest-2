@@ -19,7 +19,8 @@ public class TuneBook
 	ArrayList<String> Tune = new ArrayList<String>();
 
 	Scanner s = new Scanner(new File("File.abc"));
-	private String File;
+
+	//private String File;
 
 	private String title;
 

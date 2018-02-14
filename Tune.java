@@ -10,6 +10,7 @@ public class Tune
 	private String altTitle;
 	private String notation;
 
+	/*
 	public Tune(int x, String title, String altTitle, String notation)
 	{
 		this.x = x;
@@ -17,20 +18,14 @@ public class Tune
 		this.altTitle = altTitle;
 		this.notation = notation;
 	}
+	*/
 
-	public String toString()
-    {
-        StringBuffer sb = new StringBuffer();
-        
-        for(String word:words)
-        {
-            sb.append(word + ", ");
-        }
-
-		return sb.toString();
-
-	public static void main(String[] args)
+	public class PlayTune
 	{
-		
+		public void play(PlayTune);
 	}
+
+
+
+	
 }

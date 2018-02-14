@@ -1,3 +1,17 @@
+/*
+
+	OOP LabTest2.java 
+
+	Wednesday 14-02-2018
+
+	Darren Byrne 
+	C16735211
+	DT228-2 Computer Science
+
+
+
+*/
+
 import java.io.IOException;
 import java.io.FileReader;
 import java.util.ArrayList;

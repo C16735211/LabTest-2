@@ -4,18 +4,21 @@ public class TuneBook
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 
-	private int x;
-	private String title;
-	private String altTitle;
-	private String notation;
+	Scanner s = new Scanner(new File("File.abc"));
+	private String File;
 
-	public TuneBook(int x, String title, String altTitle, String notation)
+	private String title;
+
+	public String tunes(String title)
 	{
-		this.x = x;
 		this.title = title;
-		this.altTitle = altTitle;
-		this.notation = notation;
+
+		while (s.hasNext()) 
+		{
+			tunes.add(s.next().title);
+		}
 	}
+
 
 	public interface Player
 	{

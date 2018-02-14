@@ -1,7 +1,8 @@
 import java.io.IOException;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.io.BufferedReader
+import java.io.BufferedReader;
+import java.io.*;
 
 public class Tune
 {
@@ -20,9 +21,31 @@ public class Tune
 	}
 	*/
 
-	public class PlayTune
+	public void loadFile()
 	{
-		public void play(PlayTune);
+		BufferedReader inputStream = null;
+
+		try
+		{
+			inputStream = new BufferedReader(new FileReader("File.abc"));
+
+			String l;
+
+			while((l = inputStream.readLine()) != null)
+			{
+				File.add(l);
+			}
+		}
+	}
+
+
+
+	public class PlayTune implements TuneBook
+	{
+		public void play()
+		{
+			System.out.println("Tune Plays");
+		}
 	}
 
 
